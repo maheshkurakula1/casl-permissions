@@ -1,0 +1,24 @@
+POST http://localhost:9001/sites
+content-type: application/json
+
+{
+    "userDetails": {
+        "isOwner": false,
+        "isSiteAdmin": true
+    }
+}
+
+###
+
+POST http://localhost:9001/create
+content-type: application/json
+
+{
+    "userDetails": {
+        "isOwner": true,
+        "isSiteAdmin": false
+    },
+    "siteName": "Personal Blog",
+    "org":"YOLO",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
